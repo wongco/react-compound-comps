@@ -8,6 +8,7 @@ const ApplePie = props => (
     <Dessert.Description>
       Delicious, full of Apples, Number one favorite dessert. The best.
     </Dessert.Description>
+    {/* Override of disabled take precendence over default prop */}
     <Dessert.EatClick disabled={false}>Click Me to Eat!</Dessert.EatClick>
   </Dessert>
 );
