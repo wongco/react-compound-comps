@@ -13,7 +13,7 @@ const ChildContainer = styled.div`
 `;
 
 class Dessert extends Component {
-  static Name = props => <div>{props.children}</div>;
+  static Name = props => props.children();
   static Form = props => <form>{props.children}</form>;
   static Description = props => <div>{props.children}</div>;
   static Calories = props => <div>{`Calories: ${props.children}`}</div>;
